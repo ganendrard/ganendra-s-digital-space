@@ -32,7 +32,7 @@ const HeroSection = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/ganendrard/"
+              href="https://www.linkedin.com/in/ganendrard"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-accent transition-all duration-300 hover:scale-110"
@@ -41,7 +41,7 @@ const HeroSection = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://instagram.com/ganendrard"
+              href="https://www.instagram.com/ganendra.rd/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-accent transition-all duration-300 hover:scale-110"
