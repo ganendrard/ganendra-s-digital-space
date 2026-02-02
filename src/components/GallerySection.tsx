@@ -41,9 +41,6 @@ const GallerySection = () => {
             ))}
           </div>
 
-          <p className="text-center text-sm text-muted-foreground mt-8">
-            * Upload foto-foto Anda untuk ditampilkan di galeri ini
-          </p>
         </div>
       </div>
 
