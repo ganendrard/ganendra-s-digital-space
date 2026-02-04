@@ -55,9 +55,16 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -67,11 +74,20 @@
   ::selection {
     @apply bg-primary/20 text-foreground;
   }
+
+  /* Safe area for mobile devices with notch */
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 @layer components {
   .section-title {
-    @apply text-3xl md:text-4xl font-semibold tracking-tight;
+    @apply text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight;
     font-family: 'Playfair Display', serif;
   }
 
@@ -83,12 +99,12 @@
   }
 
   .glass-card {
-    @apply bg-card/50 backdrop-blur-md border border-border/50 rounded-xl;
+    @apply bg-card/50 backdrop-blur-md border border-border/50 rounded-lg sm:rounded-xl;
     box-shadow: var(--shadow-soft);
   }
 
   .skill-badge {
-    @apply inline-flex items-center px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium transition-all duration-300 hover:bg-accent hover:scale-105;
+    @apply inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-secondary text-secondary-foreground text-xs sm:text-sm font-medium transition-all duration-300 hover:bg-accent active:scale-95;
   }
 
   .nav-link {
@@ -102,6 +118,11 @@
 
   .nav-link:hover::after {
     @apply w-full;
+  }
+
+  /* Touch-friendly tap targets */
+  .touch-manipulation {
+    touch-action: manipulation;
   }
 }
 
