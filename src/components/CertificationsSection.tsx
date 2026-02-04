@@ -41,38 +41,38 @@ const certifications = [
 
 const CertificationsSection = () => {
   return (
-    <section id="certifications" className="py-24 bg-secondary/20">
-      <div className="container mx-auto px-6">
+    <section id="certifications" className="py-16 sm:py-24 bg-secondary/20">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="section-title text-center mb-4">Sertifikasi & Kursus</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-transparent via-foreground to-transparent mx-auto mb-12" />
+          <div className="w-20 h-1 bg-gradient-to-r from-transparent via-foreground to-transparent mx-auto mb-8 sm:mb-12" />
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {certifications.map((cert, index) => (
               <a
                 key={index}
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group glass-card p-6 hover:border-foreground/30 transition-all duration-300"
+                className="group glass-card p-4 sm:p-6 hover:border-foreground/30 transition-all duration-300 touch-manipulation"
               >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-secondary group-hover:bg-accent transition-colors flex-shrink-0">
-                    <Award size={24} />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 rounded-lg bg-secondary group-hover:bg-accent transition-colors flex-shrink-0">
+                    <Award size={20} className="sm:w-6 sm:h-6" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
-                      <h3 className="font-semibold text-sm md:text-base group-hover:text-foreground/90 line-clamp-2">
+                      <h3 className="font-semibold text-xs sm:text-sm md:text-base group-hover:text-foreground/90 line-clamp-2">
                         {cert.title}
                       </h3>
                       <ExternalLink
-                        size={16}
-                        className="text-muted-foreground group-hover:text-foreground transition-colors flex-shrink-0 mt-1"
+                        size={14}
+                        className="text-muted-foreground group-hover:text-foreground transition-colors flex-shrink-0 mt-0.5 sm:mt-1"
                       />
                     </div>
-                    <p className="text-muted-foreground text-sm mt-1">{cert.issuer}</p>
-                    <div className="flex items-center gap-1 text-xs text-muted-foreground mt-2">
-                      <Calendar size={12} />
+                    <p className="text-muted-foreground text-xs sm:text-sm mt-1">{cert.issuer}</p>
+                    <div className="flex items-center gap-1 text-[10px] sm:text-xs text-muted-foreground mt-1.5 sm:mt-2">
+                      <Calendar size={10} className="sm:w-3 sm:h-3" />
                       <span>{cert.date}</span>
                     </div>
                   </div>

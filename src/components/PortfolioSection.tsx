@@ -40,41 +40,41 @@ const projects = [
 
 const PortfolioSection = () => {
   return (
-    <section id="portfolio" className="py-24">
-      <div className="container mx-auto px-6">
+    <section id="portfolio" className="py-16 sm:py-24">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="section-title text-center mb-4">Portofolio</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-transparent via-foreground to-transparent mx-auto mb-12" />
+          <div className="w-20 h-1 bg-gradient-to-r from-transparent via-foreground to-transparent mx-auto mb-8 sm:mb-12" />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {projects.map((project, index) => (
               <a
                 key={index}
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group glass-card p-6 hover:border-foreground/30 transition-all duration-300 hover:-translate-y-1"
+                className="group glass-card p-4 sm:p-6 hover:border-foreground/30 transition-all duration-300 hover:-translate-y-1 touch-manipulation"
               >
-                <div className="flex items-center justify-between mb-4">
-                  <div className="p-3 rounded-lg bg-secondary group-hover:bg-accent transition-colors">
-                    {project.type === "github" ? <Github size={24} /> : <ExternalLink size={24} />}
+                <div className="flex items-center justify-between mb-3 sm:mb-4">
+                  <div className="p-2 sm:p-3 rounded-lg bg-secondary group-hover:bg-accent transition-colors">
+                    {project.type === "github" ? <Github size={20} className="sm:w-6 sm:h-6" /> : <ExternalLink size={20} className="sm:w-6 sm:h-6" />}
                   </div>
                   <ExternalLink
-                    size={18}
+                    size={16}
                     className="text-muted-foreground group-hover:text-foreground transition-colors"
                   />
                 </div>
-                <h3 className="font-serif font-semibold text-lg mb-2 group-hover:text-foreground/90">
+                <h3 className="font-serif font-semibold text-base sm:text-lg mb-2 group-hover:text-foreground/90">
                   {project.title}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 line-clamp-2">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs px-2 py-1 rounded bg-secondary text-muted-foreground"
+                      className="text-[10px] sm:text-xs px-2 py-0.5 sm:py-1 rounded bg-secondary text-muted-foreground"
                     >
                       {tag}
                     </span>
