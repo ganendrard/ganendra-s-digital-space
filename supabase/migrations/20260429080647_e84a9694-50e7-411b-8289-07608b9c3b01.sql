@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.check_contact_rate_limit(text) FROM PUBLIC, anon, authenticated;
