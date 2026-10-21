@@ -20,7 +20,9 @@ const AboutSection = () => {
               <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                 Memiliki kemampuan dalam pengembangan web dan analisis data, dengan keahlian teknis 
                 pada Python, Javascript, dan pemrosesan data. Memiliki minat besar dalam memanfaatkan 
-                wawasan berbasis data serta teknologi untuk menyelesaikan masalah kompleks.
+                wawasan berbasis data serta teknologi untuk menyelesaikan masalah kompleks, dan sedang 
+                mencari pengalaman baru pada bidang yang relevan dengan latar belakang serta keahlian 
+                saya untuk berkontribusi pada proyek yang berdampak.
               </p>
             </div>
 
@@ -77,24 +79,38 @@ const AboutSection = () => {
           <div className="mt-12 sm:mt-16">
             <h3 className="text-lg sm:text-xl font-serif font-semibold mb-6 sm:mb-8 text-center">Pengalaman Organisasi</h3>
             <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-              <div className="glass-card p-4 sm:p-6 hover:border-foreground/30 transition-colors">
+            <div className="glass-card p-4 sm:p-6 hover:border-foreground/30 transition-colors">
                 <h4 className="font-semibold text-base sm:text-lg mb-2">BEMP PTIK</h4>
                 <p className="text-primary/80 text-xs sm:text-sm mb-2 sm:mb-3">Ketua Departemen Rohani dan Sosial</p>
                 <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">Maret 2025 – Februari 2026</p>
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                   Bekerja sama dengan 4 staff departemen untuk menjalankan 4 Non-Program Kerja 
-                  Departemen Rohani dan Sosial meliputi aksi sosial, pengabdian masyarakat, dan 
-                  kegiatan kerohanian lingkungan kampus.
+                  Departemen Rohani dan Sosial meliputi aksi sosial, pengabdian masyarakat, 
+                  pembagian takjil pada bulan Ramadan, dan kegiatan kerohanian lingkungan kampus.
+                </p>
+              </div>
+
+              <div className="glass-card p-4 sm:p-6 hover:border-foreground/30 transition-colors">
+                <h4 className="font-semibold text-base sm:text-lg mb-2">BEMP PTIK</h4>
+                <p className="text-primary/80 text-xs sm:text-sm mb-2 sm:mb-3">Staff Departemen Rohani dan Sosial</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">Februari 2024 – Januari 2025</p>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  Program yang dirancang dengan penekanan pada manajemen keuangan yang efisien dan 
+                  transparan, memastikan tidak ada dana yang tidak digunakan dengan tepat, dengan 
+                  tujuan utama menciptakan lingkungan kampus yang bersih, sehat, dan nyaman melalui 
+                  Program Kerja <span className="font-semibold text-foreground">BERSIH</span> dan 
+                  pengelolaan dana yang tepat.
                 </p>
               </div>
 
               <div className="glass-card p-4 sm:p-6 hover:border-foreground/30 transition-colors">
                 <h4 className="font-semibold text-base sm:text-lg mb-2">RISMAF</h4>
                 <p className="text-primary/80 text-xs sm:text-sm mb-2 sm:mb-3">Wakil Ketua Umum</p>
-                <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">April 2023 - Sekarang</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3">April 2023 – Mei 2026</p>
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Membantu Ketua umum dalam menjalankan program kerja organisasi, bertanggung jawab 
-                  mengawasi kinerja divisi tertentu dan mewakili ketua umum jika berhalangan hadir.
+                  Membantu Ketua umum dalam menjalankan program kerja organisasi, serta bertanggung 
+                  jawab mengawasi kinerja divisi tertentu dan mewakili/menggantikan ketua umum jika 
+                  ketua berhalangan hadir dalam agenda dan rapat tertentu.
                 </p>
               </div>
             </div>
