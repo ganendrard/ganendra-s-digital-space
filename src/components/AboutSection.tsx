@@ -20,7 +20,9 @@ const AboutSection = () => {
               <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                 Memiliki kemampuan dalam pengembangan web dan analisis data, dengan keahlian teknis 
                 pada Python, Javascript, dan pemrosesan data. Memiliki minat besar dalam memanfaatkan 
-                wawasan berbasis data serta teknologi untuk menyelesaikan masalah kompleks.
+                wawasan berbasis data serta teknologi untuk menyelesaikan masalah kompleks, dan sedang 
+                mencari pengalaman baru pada bidang yang relevan dengan latar belakang serta keahlian 
+                saya untuk berkontribusi pada proyek yang berdampak.
               </p>
             </div>
 
