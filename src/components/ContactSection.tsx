@@ -163,7 +163,7 @@ const ContactSection = () => {
                     <Linkedin size={18} className="sm:w-5 sm:h-5" />
                   </a>
                   <a
-                    href="https://instagram.com/ganendrard"
+                    href="https://www.instagram.com/ganendra.rd/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2.5 sm:p-3 rounded-full bg-secondary hover:bg-accent transition-all duration-300 hover:scale-110 touch-manipulation"
